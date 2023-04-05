@@ -1,1 +1,14 @@
 /*************** MOBILE ***************/
+
+/* Adds padding to navigation bar */
+.fixed-top {
+    padding: 20px;
+    border: 2px solid gray;
+}
+
+/* Changes navigation link font sizes and adds underlines */
+.nav-item a {
+    font-size: 1.4rem;
+    text-decoration: underline;
+    font-family: "chauncy-pro", sans-serif;
+}
