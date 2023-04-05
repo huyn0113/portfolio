@@ -35,7 +35,7 @@ h1 {
 
 /* Sets font of all p text */
 p {
-   font-family:'Times New Roman', Times, serif 
+   font-family:'Times New Roman', Times, serif;
 }
 
 /* Sizes h1 of landing-text container, adds an underline and changes the color */
@@ -57,7 +57,7 @@ p {
     margin: 20px;
     padding: 30px;
     border: 2px solid gray;
-    border-radius: 30px;
+    border-radius: 50px;
 }
 
 .about-h1 h1 {
@@ -70,4 +70,48 @@ p {
     font-size: 1.2rem;
     padding: 30px;
     margin: 20px;
+}
+
+/* Resizes goal-img to be smaller and adds a border radius */
+.goal-img img {
+    width: 100%;
+    border-radius: 50px;
+}
+
+.goal-img {
+    border-right: 2px solid gray;
+}
+
+/* Adds border to .goals around the container and inbetween */
+.goals {
+    border: 2px solid gray;
+    column-rule: 2px solid gray;
+}
+
+/* Sets all h2 to Chauncy Pro font */
+h2 {
+    font-family: "chauncy-pro", sans-serif ;
+}
+
+/* Targets .goals-list unordered list items and changes font, size, padding and list styles */
+.goals-list ul li {
+    font-family:'Times New Roman', Times, serif;
+}
+
+/* Targets goal-img and adds padding around container with the image */
+.goal-img {
+    padding: 20px 20px;
+}
+
+/* Targets goal-list h2, sizes it to be bigger and adds padding */
+.goal-list h2 {
+    font-size: 4rem;
+    padding-top: 30px;
+    padding-bottom: 15px;
+}
+
+/* Targets goal-list unordered list, adjusts padding and list style types */ 
+.goal-list ul li{
+    padding: 10px;
+    list-style-type: circle;
 }
