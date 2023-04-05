@@ -47,7 +47,27 @@ p {
 
 /* Sizes p of landing-text container and changes color */
 .landing-text p {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     color: white;
     padding-bottom: 10px;
+}
+
+/* Sizes .about-h1 h1, adds border radius and border */
+.about-h1 {
+    margin: 20px;
+    padding: 30px;
+    border: 2px solid gray;
+    border-radius: 30px;
+}
+
+.about-h1 h1 {
+    font-size: 3rem;
+}
+
+/* Adds background color to .about-text and changes font size */
+.about-text {
+    background-color: #89A1AD;
+    font-size: 1.2rem;
+    padding: 30px;
+    margin: 20px;
 }
