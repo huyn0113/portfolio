@@ -12,3 +12,42 @@
     text-decoration: underline;
     font-family: "chauncy-pro", sans-serif;
 }
+
+/* Crops landing portrait image to a circle and sizes it to be smaller */
+.portfolio-image img {
+  border-radius: 50%;
+  width: 60%;
+  border: 2px solid white;
+  /* Adds margin to top and bottom of the image */
+  margin-top: 110px;
+  margin-bottom: 30px;
+}
+
+.landing {
+    background-color:#89A1AD;
+    padding: 30px;
+}
+
+/* Sets font of all h1 to Chauncy pro*/
+h1 {
+    font-family: "chauncy-pro", sans-serif ;
+}
+
+/* Sets font of all p text */
+p {
+   font-family:'Times New Roman', Times, serif 
+}
+
+/* Sizes h1 of landing-text container, adds an underline and changes the color */
+.landing-text h1 {
+    font-size: 4rem;
+    color: white;
+    text-decoration: underline;
+}
+
+/* Sizes p of landing-text container and changes color */
+.landing-text p {
+    font-size: 1.5rem;
+    color: white;
+    padding-bottom: 10px;
+}
