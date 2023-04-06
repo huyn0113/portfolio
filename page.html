@@ -136,14 +136,25 @@
               <div class="know-more">
                 <h2 class="text-center">Want to know more about my journey?</h2>
                 <div class="button text-center">
-                    <button type="button" class="btn btn-secondary text-center">Click Me!</button>
+                    <button type="button" class="btn btn-secondary text-center" onclick="myFunction()">Click Me!</button>
                 </div>
-                <div class="know-more-text text-center">
+                <div class="know-more-text text-center" id="knowmore">
                     <p>During the pandemic, I was able to pick up on learning After Effects. From there, I immersed myself within the editing community and have slowly increased my knowledge</p>
 
                     <p>I picked it up for fun, but quickly realized that I wanted to increase my knowledge by learning how to model and animate objects in Blender. In a few of my older works, I have attempted to work with a 3D plugin. However, I currently enjoy this type of glitchy and simple style</p>
                 </div>
               </div>
+
+            <script>
+              function myFunction() {
+                var x = document.getElementById("knowmore");
+                if (x.style.display === "none") {
+                  x.style.display = "block";
+                } else {
+                  x.style.display = "none";
+                }
+              }
+            </script>
     
 
         <div class="dg">
