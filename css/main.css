@@ -129,3 +129,18 @@ h2 {
     padding: 30px;
     font-size: 4rem;
 }
+
+/* Targets carousel buttons and adds a background color */
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    background-color: #89A1AD;
+}
+
+/* Targets thumbnail of videos in carousel and changes the opacity */
+.carousel-inner  {
+   opacity: 70%;
+}
+
+/* When hovering over carousel-inner container it resets back to normal opacity */
+.carousel-inner:hover {
+    opacity: 100%;
+}
