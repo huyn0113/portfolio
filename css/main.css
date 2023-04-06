@@ -184,11 +184,15 @@ h2 {
 
 /* Targets dg-heading and photography-heading h2 and changes font size and font color */
 .dg-heading .photography-heading, h2 {
-    font-size: 2rem;
-    
-
+    font-size: 2.5rem;
 }
 
+/* Targets dg-heading and photography-heading p and changes font size */
+.dg-heading .photography-heading, p {
+    font-size: 1.2rem;
+}
+
+/* Targets dg-heading and photograpy-heading and adds a border, border radius, margin and padding */
 .dg-heading, .photography-heading {
     border: 2px solid gray;
     margin-top: 30px;
