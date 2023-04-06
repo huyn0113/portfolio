@@ -115,3 +115,17 @@ h2 {
     padding: 10px;
     list-style-type: circle;
 }
+
+/* Targets works container and adds background color and adds padding */
+.works {
+    background-color: #89A1AD;
+    padding: 20px;
+}
+
+/* Targets .works h1 and adds a border, border radius and padding */
+.works h1 {
+    border: 2px solid gray;
+    border-radius: 60px;
+    padding: 30px;
+    font-size: 4rem;
+}
