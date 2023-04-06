@@ -76,13 +76,14 @@ p {
 .goal-img img {
     width: 100%;
     border-radius: 50px;
+    margin-top: 20px;
 }
 
 .goal-img {
     border-right: 2px solid gray;
 }
 
-/* Adds border to .goals around the container and inbetween */
+/* Adds border to .goals around the container and inbetween, as well as margin to the bottom */
 .goals {
     border: 2px solid gray;
     column-rule: 2px solid gray;
@@ -144,3 +145,37 @@ h2 {
 .carousel-inner:hover {
     opacity: 100%;
 }
+
+/* Targets video-carousel and adds padding to the bottom */
+
+.video-carousel {
+    padding-bottom: 20px;
+}
+
+/* Targets h2 in know-more container and changes font size and color */
+.know-more h2 {
+    font-size: 2rem;
+    color: #89A1AD;
+    padding: 20px;
+}
+
+/* Targets know-more button and changes font family, size, background color and adds a border radius */
+.know-more button {
+    font-family: "chauncy-pro", sans-serif ;
+    font-size: 1.5rem;
+    background-color: #89A1AD;
+    border-radius: 20px;
+}
+
+/* Targets know-more-text and adds a background color, changes font color and adds a border */
+.know-more-text {
+    background-color: #89A1AD;
+    padding: 20px;
+    margin-top: 20px;
+    border: 2px solid gray;
+    font-size: 1.2rem;
+    color: white;
+}
+
+
+
