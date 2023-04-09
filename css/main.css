@@ -222,10 +222,35 @@ h2 {
     border-bottom: 2px solid gray;
 }
 
-/* Targets images of services-content container and adjusts image shape with width, height and border radius. Fits the image to the shape using object cover */
+/* Targets images of services-content container and adjusts image shape with width, height and border radius. Fits the image to the shape using object-fit. As well as adds a margin to the bottom */
 .services-content img {
     width: 100%;
     height: 200px;
     object-fit: cover;
+    margin-bottom: 30px;
     border-radius: 20px;
+   
+}
+
+/* Targets services container and adds a background coor */
+.services {
+    background-color: #89A1AD;
+}
+
+/* Targets service container's h1, increases font size, changes font color, adds an underline and adds padding */
+.services h1 {
+    font-size: 4rem;
+    color: white;
+    text-decoration: underline;
+    padding: 30px;
+}
+
+/* Overlays services-content's h3 over images using position, top, left and transform */
+.services-options {
+    position: absolute;
+   font-size: 2.5rem;
+   color: white;
+   font-family: "chauncy-pro", sans-serif ;
+   left: 30%;
+ 
 }
