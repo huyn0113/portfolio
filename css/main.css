@@ -273,6 +273,8 @@ h2 {
     font-size: 1.2rem;
 }
 
+
+
 .form-group {
     padding-bottom: 20px;
 }
@@ -297,3 +299,33 @@ footer p {
 footer {
     padding-top: 10px;
 }
+
+.quote {
+    border-top: 2px solid gray;
+    border-right: 2px solid gray;
+    border-left: 2px solid gray;
+    padding: 30px;
+}
+
+.quote h1 {
+    font-size: 3rem;
+    color: gray;
+}
+
+.quote p {
+    color: gray;
+}
+
+.quote-group {
+    padding-bottom: 20px;
+ 
+}
+
+.quote-button button {
+    color: gray;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 20px;
+    border: 1px solid gray;
+}
+
