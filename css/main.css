@@ -254,3 +254,37 @@ h2 {
    left: 30%;
  
 }
+
+.form-heading {
+    border: 2px solid gray;
+    padding: 30px;
+    color: gray;
+}
+
+.form-heading h1 {
+    font-size: 3rem;
+}
+
+.contact-form {
+    background-color: #89A1AD;
+    padding: 30px;
+    color: white;
+    font-family: "chauncy-pro", sans-serif ;
+    font-size: 1.2rem;
+}
+
+.form-group {
+    padding-bottom: 20px;
+}
+
+.contact-button button {
+    color: gray;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 20px;
+    border: none;
+}
+
+.map iframe {
+    width: 100%;
+}
