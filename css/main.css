@@ -131,6 +131,10 @@ h2 {
     font-size: 4rem;
 }
 
+.ve-header {
+    padding-top: 20px;
+}
+
 /* Targets carousel buttons and adds a background color */
 .carousel-control-prev-icon, .carousel-control-next-icon {
     background-color: #89A1AD;
