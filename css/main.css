@@ -252,8 +252,10 @@ h2 {
    color: white;
    font-family: "chauncy-pro", sans-serif ;
    left: 30%;
+   padding-top: 70px;
  
 }
+
 
 .form-heading {
     border: 2px solid gray;
