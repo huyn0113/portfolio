@@ -260,17 +260,19 @@ h2 {
  
 }
 
-
+/* Targets form-heading container, adds a border, padding and changes the font color */
 .form-heading {
     border: 2px solid gray;
     padding: 30px;
     color: gray;
 }
 
+/* Targets form-heading's h1 and increases the font size */
 .form-heading h1 {
     font-size: 3rem;
 }
 
+/* Targets contact-form container, sets the background color, changes font color, adds padding and changes font family and font size */
 .contact-form {
     background-color: #89A1AD;
     padding: 30px;
@@ -279,10 +281,12 @@ h2 {
     font-size: 1.2rem;
 }
 
+/* Targets form-group container and adds padding to the bottom */
 .form-group {
     padding-bottom: 20px;
 }
 
+/* Targets contact-button container's button and customizes it by changes the font color, adds padding to the left and right, as well as adding a border radius and setting the outline to none */
 .contact-button button {
     color: gray;
     padding-left: 30px;
@@ -291,19 +295,23 @@ h2 {
     border: none;
 }
 
+/* Targets iframe in map container and sizes map to fit the page using width */
 .map iframe {
     width: 100%;
 }
 
+/* Targets paragraph in footer, changes font color and increases font size */
 footer p {
     color: gray;
     font-size: 1rem;
 }
 
+/* Targets footer and adds padding to the top */
 footer {
     padding-top: 10px;
 }
 
+/* Targets quote container, adds a border to the top, left and right and adds padding */
 .quote {
     border-top: 2px solid gray;
     border-right: 2px solid gray;
@@ -311,20 +319,24 @@ footer {
     padding: 30px;
 }
 
+/* Targets quote container's h1 and changes the font color and increases font size */
 .quote h1 {
     font-size: 3rem;
     color: gray;
 }
 
+/* Targets quote container's p and changes the font color */
 .quote p {
     color: gray;
 }
 
+/* Targets quote-group container and adds padding to the bottom */
 .quote-group {
     padding-bottom: 20px;
  
 }
 
+/* Targets quote-button container's button and customizes it by changing the font color, adds padding to the left and right as well as adding a border radius and solid 1px gray border */
 .quote-button button {
     color: gray;
     padding-left: 20px;
