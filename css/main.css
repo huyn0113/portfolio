@@ -1,3 +1,28 @@
+
+/* Styles skip links */s
+.skip-links {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    z-index: 1000;
+  }
+  
+  /* Targets skip-link's links, sets position and adds padding, changes background color and font color */
+  .skip-links a {
+    padding: .5rem;
+    background: white   ;
+    position: absolute;
+    color: black;
+  }
+  
+  /* Displays skip link under nav bar when focused on */
+  .skip-links a:focus {
+    top: 100px;
+  }
+
+.skip-links a:hover {
+    top: 0;
+}
 /*************** | MOBILE | 400PX AND BELOW |  ***************/
 
 /* Adds padding to navigation bar */
