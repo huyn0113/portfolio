@@ -429,6 +429,11 @@ footer {
         font-size: 2rem;
     }
 
+    /* Targets form-control and adjusts the font size to make the form box bigger */
+    .form-control {
+        font-size: 1.2rem;
+    }
+
 }
 
 /*************** | DESKTOP | 1200PX AND BELOW |  ***************/
