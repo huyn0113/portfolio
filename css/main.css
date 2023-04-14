@@ -413,5 +413,14 @@ footer {
         margin-top: 20px;
         margin-bottom: 20px;
     }
+
+    /* Targets contact-form elements and increases font size */
+    .contact-form {
+        font-size: 2rem;
+    }
   
+    /* Targets footer paragraph and decreases the font size */
+    footer p {
+        font-size: 1.2rem;
+    }
 }
