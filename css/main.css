@@ -476,4 +476,57 @@ footer {
 
 }
 
-/*************** | DESKTOP | 1200PX AND BELOW |  ***************/
+/*************** | DESKTOP | 1024PX AND BELOW |  ***************/
+@media screen and (min-width: 1024px) {
+    /* Targets navigation links and increases font size */
+    .nav-item a {
+        font-size: 2rem;
+    }
+
+    /* Targets nav-item container and adds a border to the right */
+    .nav-item {
+        border-right: 2px solid gray;
+    }
+
+    /* Targets portfolio-image's img and decreases image size */
+    .portfolio-image img {
+       width: 50%;
+    }
+
+    /* Targets landing-text's p and changes the padding and increases font size*/
+    .landing-text p {
+        padding: 20px;
+        font-size: 2rem;
+    }
+    /* Targets h1 category heading containers and increases font size */
+    .about-h1, .works h1, .dg-heading, .photography-heading  {
+        padding: 50px;
+    }
+
+    /* Targets about-text and increases padding */
+    .about-text {
+        padding: 50px;
+    }
+
+    /* Targets first about-text's p and increases bottom padding */
+    .about-text p:nth-child(1) {
+        padding-bottom: 30px;
+    }
+
+    /* Targets goal-img's img and decreases image size */
+    .goal-img img {
+        width: 80%;
+    }
+
+    /* Targets goal-list h2 and increases the font size */
+    .goal-list h2 {
+        font-size: 5rem;
+    }
+
+    /* Targets goal-list list items and increases font size and line height */
+    .goal-list li {
+        font-size: 1.8rem;
+        line-height: 70px;
+    }
+
+}
