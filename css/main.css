@@ -20,9 +20,6 @@
     top: 100px;
   }
 
-.skip-links a:hover {
-    top: 0;
-}
 /*************** | MOBILE | 400PX AND BELOW |  ***************/
 
 /* Adds padding to navigation bar */
@@ -53,9 +50,10 @@
     padding: 30px;
 }
 
-/* Sets font of all h1 to Chauncy pro*/
+/* Sets font of all h1 to Chauncy pro and adds a text shadow */
 h1 {
     font-family: "chauncy-pro", sans-serif ;
+    text-shadow: 2px 2px black;
 }
 
 /* Sets font of all p text */
@@ -68,6 +66,7 @@ p {
     font-size: 4rem;
     color: white;
     text-decoration: underline;
+    text-shadow: 2px 2px black;
 }
 
 /* Sizes p of landing-text container and changes color */
@@ -75,6 +74,7 @@ p {
     font-size: 1.2rem;
     color: white;
     padding-bottom: 10px;
+    text-shadow: 2px 2px black;
 }
 
 /* Sizes .about-h1 h1, adds border radius and border */
@@ -89,12 +89,13 @@ p {
     font-size: 3rem;
 }
 
-/* Adds background color to .about-text and changes font size */
+/* Adds background color to .about-text and changes font size as well as adding text shadow */
 .about-text {
     background-color: #89A1AD;
     font-size: 1.2rem;
     padding: 30px;
     margin: 20px;
+    text-shadow: 2px 2px black;
 }
 
 /* Resizes goal-img to be smaller and adds a border radius */
@@ -122,6 +123,7 @@ h2 {
 /* Targets .goals-list unordered list items and changes font, size, padding and list styles */
 .goals-list ul li {
     font-family:'Times New Roman', Times, serif;
+    
 }
 
 /* Targets goal-img and adds padding around container with the image */
@@ -140,6 +142,7 @@ h2 {
 .goal-list ul li{
     padding: 10px;
     list-style-type: circle;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 /* Targets works container and adds background color and adds padding */
@@ -181,11 +184,13 @@ h2 {
     padding-bottom: 20px;
 }
 
-/* Targets h2 in know-more container and changes font size and color */
+/* Targets h2 in know-more container and changes font size and color as well as a text shadow */
 .know-more h2 {
     font-size: 2rem;
     color: #89A1AD;
     padding: 20px;
+    text-shadow: 2px 2px black;
+    
 }
 
 /* Targets know-more button and changes font family, size, background color and adds a border radius */
@@ -194,6 +199,7 @@ h2 {
     font-size: 1.5rem;
     background-color: #89A1AD;
     border-radius: 20px;
+    text-shadow: 2px 2px black;
 }
 
 /* Targets know-more-text and adds a background color, changes font color and adds a border */
@@ -204,6 +210,7 @@ h2 {
     border: 2px solid gray;
     font-size: 1.2rem;
     color: white;
+    text-shadow: 2px 2px black;
 }
 
 /* targets id of knowmore and sets display to none */
@@ -219,6 +226,7 @@ h2 {
 /* Targets dg-heading and photography-heading p and changes font size */
 .dg-heading .photography-heading, p {
     font-size: 1.2rem;
+    
 }
 
 /* Targets dg-heading and photograpy-heading and adds a border, border radius, margin and padding */
@@ -319,6 +327,7 @@ h2 {
     padding-right: 30px;
     border-radius: 20px;
     border: none;
+    background-color: white;
 }
 
 /* Targets iframe in map container and sizes map to fit the page using width */
@@ -457,6 +466,12 @@ footer {
     /* Targets form-control and adjusts the font size to make the form box bigger */
     .form-control {
         font-size: 1.2rem;
+    }
+
+    /* Targets carousel-item container's video and adjusts video height */
+    .carousel-item video {
+        width: 100%;
+        height: 500px;
     }
 
 }
