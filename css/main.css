@@ -400,6 +400,10 @@ footer {
         
     }
 
-    .
-   
+    .photography-gallery .carousel-inner {
+        height: 700px;
+        width: 500px;
+        margin: auto;
+    }
+  
 }
