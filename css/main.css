@@ -1,4 +1,4 @@
-/*************** MOBILE ***************/
+/*************** | MOBILE | 400PX AND BELOW |  ***************/
 
 /* Adds padding to navigation bar */
 .fixed-top {
@@ -345,3 +345,51 @@ footer {
     border: 1px solid gray;
 }
 
+/*************** | TABLET | 770PX AND BELOW |  ***************/
+@media screen and (min-width: 770px) {
+    /* Increases font size for all text */
+
+    /* Targets h1 in landing-text conttainer and increases font size */
+    .landing-text h1   {
+        font-size: 6rem;
+    }
+
+    /* Targets h1 text in all heading containers and increases the size */
+    .about-h1 h1, .works h1, .services h1, .quote h1, .contact h1 {
+        font-size: 4rem;
+    }
+
+    /* Targets h2 text in all heading container and increases the size */
+    .goal-list h2, .ve-header h2, .dg-heading h2, .photography-heading h2, .know-more h2 {
+        font-size: 3.2rem;
+    }
+
+    /* Targets all paragraph text and increases font size */
+    body p, .landing-text p {
+        font-size: 1.8rem;
+    }
+
+    /* Targets menu link items and increases font size */
+    .nav-item a {
+        font-size: 1.5rem;
+    }
+
+    /* Targets goal-list container's list items and increases the font size as well as bottom margin */
+    .goal-list li {
+        font-size: 1.6rem;
+        margin-bottom: 20px;
+    }
+
+    /* Targets goal-img image and adjusts bottom padding */
+    .goal-img img {
+        padding-bottom: 20px;
+    }
+
+    /* Targets services-content container's images and adjusts image widths */
+  
+    .services-content img {
+        object-fit: cover;
+        width: 700px;
+    }
+   
+}
