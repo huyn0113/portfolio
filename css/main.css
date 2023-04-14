@@ -423,4 +423,12 @@ footer {
     footer p {
         font-size: 1.2rem;
     }
+
+    /* Targets know-more container's button and increases font size to make button bigger */
+    .know-more button {
+        font-size: 2rem;
+    }
+
 }
+
+/*************** | DESKTOP | 1200PX AND BELOW |  ***************/
