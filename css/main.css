@@ -400,10 +400,18 @@ footer {
         
     }
 
+    /* Targets photography-gallery's carousel-inner's container and uses height and width to re-size the images and uses margin to center the images */
     .photography-gallery .carousel-inner {
         height: 700px;
         width: 500px;
         margin: auto;
+    }
+
+    /* Targets quote-button and increases font size to make the button bigger, and increases both top and bottom margins */
+    .quote-button button {
+        font-size: 1.2rem;
+        margin-top: 20px;
+        margin-bottom: 20px;
     }
   
 }
