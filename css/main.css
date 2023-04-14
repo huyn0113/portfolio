@@ -257,6 +257,7 @@ h2 {
    font-family: "chauncy-pro", sans-serif ;
    left: 30%;
    padding-top: 70px;
+   text-shadow: 2px 2px black;
  
 }
 
@@ -391,5 +392,14 @@ footer {
         object-fit: cover;
         width: 700px;
     }
+
+    /* Targets services-option container and adjusts positioning over the service images and increases font size */
+    .services-options {
+        left: 260px;
+        font-size: 3rem;
+        
+    }
+
+    .
    
 }
