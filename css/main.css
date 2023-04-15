@@ -380,6 +380,12 @@ footer {
     border: 1px solid gray;
 }
 
+/* Targets quote-group's label and changes font family and the font color */
+.quote-group label {
+    font-family: "chauncy-pro", sans-serif ;
+    color: gray;
+}
+
 /*************** | TABLET | 770PX AND BELOW |  ***************/
 @media screen and (min-width: 770px) {
     /* Increases font size for all text */
@@ -527,6 +533,61 @@ footer {
     .goal-list li {
         font-size: 1.8rem;
         line-height: 70px;
+    }
+
+     /* Targets carousel-item container's video and adjusts video height */
+     .carousel-item video {
+        width: 100%;
+        height: 600px;
+    }
+
+    /* Targets know-more-text container and increases padding */
+    .know-more-text {
+        padding: 50px;
+    }
+
+    /* Targets first p tag in know-more-text container using nth child and increases bottom padding */
+    .know-more-text p:nth-child(1) {
+        padding-bottom: 20px;
+    }
+
+   /* Targets services-content images and increses image width */
+   .services-content img {
+    object-fit: cover;
+    width: 900px;
+    }
+
+     /* Targets services-option container and adjusts positioning over the service images and increases font size */
+     .services-options {
+        left: 420px;
+        font-size: 3rem;
+    }
+
+    /* Targets services container and increases padding to the top and bottom */
+    .services {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    /* Targets quote container and increases padding to the left and right*/
+    .quote {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    /* Targets quote-group's label and increases the font size */
+    .quote-group label {
+        font-size: 1.5rem;
+    }
+
+    /* Targets quote-heading and adds padding to the bottom */
+    .quote-heading {
+        padding-bottom: 20px;
+    }
+
+    /* Targets quote-button's button and increases font size to make the  button larger */
+    .quote-button button {
+        font-size: 1.5rem;
     }
 
 }
