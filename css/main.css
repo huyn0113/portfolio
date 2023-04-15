@@ -620,4 +620,11 @@ footer {
     font-size: 1.5rem;
    }
 
+   /* Targets navbar-brand img logo and increases image size using height and width, ensure image stays contained with object-fit */
+   .navbar-brand img {
+    object-fit: cover;
+    height: 80px;
+    width: 80px;
+   }
+
 }
