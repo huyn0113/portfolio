@@ -62,45 +62,45 @@
 </div>
 
 <!-- Header content | Navigation -->
-    <header role="banner">
-        <!-- This is the navigation bar -->
-        <div class="navigation-bar" role="navigation" aria-label="primary">
-            <nav class="fixed-top bg-white" aria-label="site navigation">
-              <!-- Menu is created using unordered list and list items with on page links -->
-                <ul class="nav nav-pills nav-justified" role="list menu" aria-label="site menu">
-                    <!-- Link with logo image -->
-                    <a class="navbar-brand" href="page.html" aria-haspopup="true">
-                        <img src="images/jess_huynh_portfolio_logo.png" width="60" height="60" alt="Logo image of Jess Huynh's portfolio brand" class="align-middle" role="img">
-                    </a>
-                    <li class="nav-item" role="listitem menubar">
-                      <a class="nav-link text-secondary" href="#about" role="link" aria-haspopup="true">About</a>
-                    </li>
-                    <li class="nav-item" role="listitem menubar">
-                      <a class="nav-link text-secondary" href="#works" role="link" aria-haspopup="true">Works</a>
-                    </li>
-                    <li class="nav-item" role="listitem menubar">
-                        <a class="nav-link text-secondary" href="#services" role="link" aria-haspopup="true">Services</a>
-                      </li>
-                    <li class="nav-item" role="listitem menubar">
-                      <a class="nav-link text-secondary" href="#contact" role="link" aria-haspopup="true">Contact</a>
-                    </li>
-                  </ul>
-            </nav>
-        </div>
-    </header>
+<header role="banner" itemscope itemtype="http://schema.org/WPHeader">
+  <!-- This is the navigation bar -->
+  <div class="navigation-bar" role="navigation" aria-label="primary" itemprop="navigation">
+      <nav class="fixed-top bg-white" aria-label="site navigation" itemscope itemtype="http://schema.org/SiteNavigationElement">
+          <!-- Menu is created using unordered list and list items with on page links -->
+          <ul class="nav nav-pills nav-justified" role="list menu" aria-label="site menu">
+              <!-- Link with logo image -->
+              <a class="navbar-brand" href="page.html" aria-haspopup="true" itemprop="url">
+                  <img src="images/jess_huynh_portfolio_logo.png" width="60" height="60" alt="Logo image of Jess Huynh's portfolio brand" class="align-middle" role="img" itemprop="logo">
+              </a>
+              <li class="nav-item" role="listitem menubar" itemprop="name">
+                  <a class="nav-link text-secondary" href="#about" role="link" aria-haspopup="true" itemprop="url">About</a>
+              </li>
+              <li class="nav-item" role="listitem menubar" itemprop="name">
+                  <a class="nav-link text-secondary" href="#works" role="link" aria-haspopup="true" itemprop="url">Works</a>
+              </li>
+              <li class="nav-item" role="listitem menubar" itemprop="name">
+                  <a class="nav-link text-secondary" href="#services" role="link" aria-haspopup="true" itemprop="url">Services</a>
+              </li>
+              <li class="nav-item" role="listitem menubar" itemprop="name">
+                  <a class="nav-link text-secondary" href="#contact" role="link" aria-haspopup="true" itemprop="url">Contact</a>
+              </li>
+          </ul>
+      </nav>
+  </div>
+</header>
 <!-- Body content -->
     <main role="main">
         <!-- Landing with introductory content -->
         <div class="landing" id="landing" role="complementary">
-            <!-- Container with professional image of self -->
-            <div class="portfolio-image">
-                <img src="images/image_of_self/photo_of_jess-huynh-500_x_500.jpg" alt="Selfie image of Jess Huynh" class="img-fluid mx-auto d-block" role="img">
-            </div>
-            <!--Container with introductory content -->
-            <div class="landing-text text-center" role="article" aria-label="introductory content">
-                <h1 role="heading">Jess Huynh</h1>
-                <p>Hey there! The name's Jess and welcome to my website where you can view all my work!</p>
-            </div>
+          <!-- Container with professional image of self -->
+          <div class="portfolio-image" itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
+              <img src="images/image_of_self/photo_of_jess-huynh-500_x_500.jpg" alt="Selfie image of Jess Huynh" class="img-fluid mx-auto d-block" role="img" itemprop="contentUrl">
+          </div>
+          <!--Container with introductory content -->
+          <div class="landing-text text-center" role="article" aria-label="introductory content">
+              <h1 role="heading">Jess Huynh</h1>
+              <p itemprop="description">Hey there! The name's Jess and welcome to my website where you can view all my work!</p>
+          </div>
         </div>
         <!-- About section -->
         <div class="about text-center text-secondary" id="about" role="article complementary">
@@ -118,96 +118,97 @@
                 </p>
             </div>
         </div>
-        <!-- Goals section -->
-        <div class="goals container" id="goals" role="article complementary">
+       <!-- Goals section -->
+        <div class="goals container" id="goals" role="article complementary" itemscope itemtype="https://schema.org/Article">
           <!-- Uses bootstrap classes to make a two column grid -->
-            <div class="row">
-              <!-- Image of a dog -->
-              <div class="goal-img col">
-                <img src="images/riley_the_dog.jpg" alt="Image of a shih tzu dog posing for the camera" class="mx-auto d-block" role="img">
-              </div>
-              <!-- Goals list -->
-              <div class="goal-list col" role="document">
-                <h2 class="text-center text-secondary" role="heading">Goals</h2>
-                <!-- Unordered list -->
-                    <ul class="text-secondary" role="list">
-                      <!-- List items -->
-                        <li role="listitem">
-                            Learn different digital styles
-                        </li>
-                        <li role="listitem">
-                            Take on passion projects 
-                        </li>
-                        <li role="listitem">
-                            Persevere through art block
-                        </li>
-                    </ul>
-              </div>
+          <div class="row">
+            <!-- Image of a dog -->
+            <div class="goal-img col" itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
+              <img src="images/riley_the_dog.jpg" alt="Image of a shih tzu dog posing for the camera" class="mx-auto d-block" role="img" itemprop="contentUrl">
             </div>
+            <!-- Goals list -->
+            <div class="goal-list col" role="document" itemprop="articleBody">
+              <h2 class="text-center text-secondary" role="heading" itemprop="headline">Goals</h2>
+              <!-- Unordered list -->
+              <ul class="text-secondary" role="list" itemprop="itemListElement" itemscope itemtype="https://schema.org/ItemList">
+                <!-- List items -->
+                <li role="listitem" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                  <span itemprop="name">Learn different digital styles</span>
+                  <meta itemprop="position" content="1">
+                </li>
+                <li role="listitem" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                  <span itemprop="name">Take on passion projects</span>
+                  <meta itemprop="position" content="2">
+                </li>
+                <li role="listitem" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                  <span itemprop="name">Persevere through art block</span>
+                  <meta itemprop="position" content="3">
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
         <!-- Works section -->
-        <div class="works text-center text-white" id="works" role="article complementary">
-            <h1 role="heading">My Work</h1>
+        <div class="works text-center text-white" id="works" role="article complementary" itemscope itemtype="http://schema.org/CreativeWork">
+          <h1 role="heading" itemprop="headline">My Work</h1>
         </div>
-        <div class="ve-header text-center text-secondary" id="ve">
-          <h2 role="heading">Video Editing</h2>
+        <div class="ve-header text-center text-secondary" id="ve" itemscope itemtype="http://schema.org/CreativeWork">
+          <h2 role="heading" itemprop="headline">Video Editing</h2>
         </div>
-            <!-- Video editing content -->
-            <!-- Bootstrap carousel with videos -->
-            <div id="carouselExampleIndicators" class="carousel slide video-carousel" data-ride="carousel">
-                <!-- Carousel slide indicators -->
-                <ol class="carousel-indicators" role="list">
-                  <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active" role="listitem"></li>
-                  <li data-target="#carouselExampleIndicators" data-slide-to="1" role="listitem"></li>
-                  <li data-target="#carouselExampleIndicators" data-slide-to="2" role="listitem"></li>
-                </ol>
-                <!-- Carousel items -->
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <!-- Video source with poster thumbnail images -->
-                    <video width="100%" height="400px" controls poster="images/video_thumbnails/geto_kurxxed_emeraldz_edit_thumbnail.png" class="thumbnail">
-                        <source src="videos/geto_kurxxed_emeraldz_edit.mp4" type="video/mp4">
-                    </video>
-                  </div>
-                  <div class="carousel-item">
-                    <!-- Video source with poster thumbnail images -->
-                    <video width="100%" height="400px" controls poster="images/video_thumbnails/yuta_okkotsu_edit_thumbnail.png" class="thumbnail">
-                        <source src="videos/yuta_okkotsu_tame_impala_edit.mp4" type="video/mp4">
-                    </video>
-                  </div>
-                  <div class="carousel-item">
-                    <!-- Video source with poster thumbnail images -->
-                    <video width="100%" height="400px" controls poster="images/video_thumbnails/han_jisung_edit_thumbnail.png" class="thumbnail">
-                        <source src="videos/han_jisung_edit.mp4" type="video/mp4">
-                    </video>
-                  </div>
-                </div>
-                <!-- Carousel buttons -->
-                <!-- Previous icon -->
-                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="sr-only"></span>
-                </a>
-                <!-- Next icon -->
-                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="sr-only"></span>
-                </a>
+        <!-- Video editing content -->
+        <!-- Bootstrap carousel with videos -->
+        <div id="carouselExampleIndicators" class="carousel slide video-carousel" data-ride="carousel" itemscope itemtype="http://schema.org/VideoObject">
+          <!-- Carousel slide indicators -->
+          <ol class="carousel-indicators" role="list">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active" role="listitem"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1" role="listitem"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2" role="listitem"></li>
+          </ol>
+          <!-- Carousel items -->
+          <div class="carousel-inner">
+            <div class="carousel-item active" itemprop="video">
+              <!-- Video source with poster thumbnail images -->
+              <video width="100%" height="400px" controls poster="images/video_thumbnails/geto_kurxxed_emeraldz_edit_thumbnail.png" class="thumbnail" itemprop="contentURL">
+                <source src="videos/geto_kurxxed_emeraldz_edit.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="carousel-item" itemprop="video">
+              <!-- Video source with poster thumbnail images -->
+              <video width="100%" height="400px" controls poster="images/video_thumbnails/yuta_okkotsu_edit_thumbnail.png" class="thumbnail" itemprop="contentURL">
+                <source src="videos/yuta_okkotsu_tame_impala_edit.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="carousel-item" itemprop="video">
+              <!-- Video source with poster thumbnail images -->
+              <video width="100%" height="400px" controls poster="images/video_thumbnails/han_jisung_edit_thumbnail.png" class="thumbnail" itemprop="contentURL">
+                <source src="videos/han_jisung_edit.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+          <!-- Carousel buttons -->
+          <!-- Previous icon -->
+          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only"></span>
+          </a>
+          <!-- Next icon -->
+          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only"></span>
+          </a>
+        </div>
+        <!-- Additional Info Section -->
+        <!-- Additional info header -->
+        <div class="know-more" role="article complementary" aria-label="additional information" itemscope itemtype="http://schema.org/CreativeWork">
+          <h2 class="text-center" role="heading" itemprop="headline">Want to know more about my journey?</h2>
+               <!-- Additional info button with javascript reveal code -->
+              <div class="button text-center">
+                <button type="button" class="btn btn-secondary text-center" onclick="myFunction()" role="button">Click Me!</button>
               </div>
-              <!-- Additional Info Section -->
-              <!-- Additional info header -->
-              <div class="know-more" role="article complementary" aria-label="additional information">
-                <h2 class="text-center" role="heading">Want to know more about my journey?</h2>
-                <!-- Additional info button with javascript reveal code -->
-                <div class="button text-center">
-                    <button type="button" class="btn btn-secondary text-center" onclick="myFunction()" role="button">Click Me!</button>
-                </div>
-                <!-- Additional information text content -->
-                <div class="know-more-text text-center" id="knowmore">
-                    <p>During the pandemic, I was able to pick up on learning After Effects. From there, I immersed myself within the editing community and have slowly increased my knowledge</p>
-
-                    <p>I picked it up for fun, but quickly realized that I wanted to increase my knowledge by learning how to model and animate objects in Blender. In a few of my older works, I have attempted to work with a 3D plugin. However, I currently enjoy this type of glitchy and simple style</p>
-                </div>
+              <!-- Additional information text content -->
+              <div class="know-more-text text-center" id="knowmore" itemscope itemtype="https://schema.org/Article">
+                <p itemprop="articleBody">During the pandemic, I was able to pick up on learning After Effects. From there, I immersed myself within the editing community and have slowly increased my knowledge</p>
+                <p itemprop="articleBody">I picked it up for fun, but quickly realized that I wanted to increase my knowledge by learning how to model and animate objects in Blender. In a few of my older works, I have attempted to work with a 3D plugin. However, I currently enjoy this type of glitchy and simple style</p>
               </div>
 
             <!-- Javascript code for content reveal -->
@@ -221,42 +222,43 @@
                 }
               }
             </script>
-        <!-- Digital Graphics Section-->
-        <div class="dg" id="dg" role="article complementary">
+       <!-- Digital Graphics Section-->
+        <div class="dg" id="dg" role="article complementary" itemscope itemtype="https://schema.org/CreativeWork">
           <!-- Digital graphics header information -->
-            <div class="dg-heading text-center text-secondary">
-                <h2 role="heading">Digital Graphics</h2>
-                <p>A few of my favourite pieces I made in my first semester in the IMD program</p>
-            </div>
-            <!-- Grid system displaying images -->
-            <div class="dg-gallery">
-                <div class="container text-center">
-                    <div class="row g-0">
-                      <div class="col">
-                        <img src="images/digital_graphics_works/avatar_icon_large.jpg" alt="Digital art of a space cat on the moon" role="img" aria-label="image">
+          <div class="dg-heading text-center text-secondary">
+              <h2 role="heading" itemprop="name">Digital Graphics</h2>
+              <p itemprop="description">A few of my favourite pieces I made in my first semester in the IMD program</p>
+          </div>
+          <!-- Grid system displaying images -->
+          <div class="dg-gallery">
+              <div class="container text-center">
+                  <div class="row g-0">
+                      <div class="col" itemprop="contentUrl">
+                          <img src="images/digital_graphics_works/avatar_icon_large.jpg" alt="Digital art of a space cat on the moon" role="img" aria-label="image" itemprop="image">
                       </div>
-                      <div class="col">
-                        <img src="images/digital_graphics_works/nike_logo_redesign.png" alt="Redesign of nike logo with a green swoosh and stars" role="img" aria-label="image">
+                      <div class="col" itemprop="contentUrl">
+                          <img src="images/digital_graphics_works/nike_logo_redesign.png" alt="Redesign of nike logo with a green swoosh and stars" role="img" aria-label="image" itemprop="image">
                       </div>
-                    </div>
-                    <div class="row g-0">
-                      <div class="col">
-                        <img src="images/digital_graphics_works/faetoi_brand_logo.png" alt="Personal brand logo" role="img" aria-label="image">
-                      </div>
-                      <div class="col">
-                        <img src="images/digital_graphics_works/jinx_the_cat_vector.png" alt="Jinx the cat vector image" role="img" aria-label="image">
-                      </div>
-                    </div>
                   </div>
-            </div>
+                  <div class="row g-0">
+                      <div class="col" itemprop="contentUrl">
+                          <img src="images/digital_graphics_works/faetoi_brand_logo.png" alt="Personal brand logo" role="img" aria-label="image" itemprop="image">
+                      </div>
+                      <div class="col" itemprop="contentUrl">
+                          <img src="images/digital_graphics_works/jinx_the_cat_vector.png" alt="Jinx the cat vector image" role="img" aria-label="image" itemprop="image">
+                      </div>
+                  </div>
+              </div>
+          </div>
+        </div> 
         <!-- Photography Section -->
-        <div class="photography" id="photography" role="article complementary">
-            <div class="photography-heading text-center text-secondary">
-                <h2 role="heading">Photography</h2>
-                <p>An art form I was surprised to have really enjoyed!</p>
-            </div>
+        <div class="photography" id="photography" role="article complementary" itemscope itemtype="https://schema.org/CreativeWork">
+          <div class="photography-heading text-center text-secondary" itemprop="name">
+              <h2 role="heading" itemprop="headline">Photography</h2>
+              <p itemprop="description">An art form I was surprised to have really enjoyed!</p>
+          </div>
         </div>
-        <div class="photography-gallery" role="region" aria-label="photography gallery">
+        <div class="photography-gallery" role="region" aria-label="photography gallery" itemscope itemtype="https://schema.org/ImageGallery" itemprop="associatedMedia">
 
           <div id="carouselExampleIndicators-2" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators" role="list">
@@ -303,34 +305,34 @@
             </a>
           </div>
           
-        <!-- Services section -->
+       <!-- Services section -->
         <!-- Services header -->
-        <div class="services text-center" id="services" role="article complementary">
-            <h1 role="heading">My Services</h1>
+        <div class="services text-center" id="services" role="article complementary" itemscope itemtype="https://schema.org/Service">
+          <h1 role="heading" itemprop="name">My Services</h1>
           <!-- Service images displayed bootstrap grid system -->
           <div class="container services-content">
-              <div class="row justify-content-md-center">
-                <div class="col col-md-auto">
-                  <h3 class="services-options" role="heading">Video Editing</h3>
-                  <img src="images/video_thumbnails/geto_kurxxed_emeraldz_edit_thumbnail.png" alt="Thumbnail image of videoe edit" role="img">
-                </div>
+            <div class="row justify-content-md-center">
+              <div class="col col-md-auto" itemscope itemtype="https://schema.org/VideoObject">
+                <h3 class="services-options" role="heading" itemprop="name">Video Editing</h3>
+                <img src="images/video_thumbnails/geto_kurxxed_emeraldz_edit_thumbnail.png" alt="Thumbnail image of videoe edit" role="img" itemprop="thumbnailUrl">
               </div>
-              <div class="row justify-content-md-center">
-                <div class="col col-md-auto">
-                  <h3 class="services-options" role="heading">Digital Graphics</h3>
-                  <img src="images/digital_graphics_works/avatar_icon_large.jpg" alt="Thumbnail image of space cat icon" role="img">
-                </div>
+            </div>
+            <div class="row justify-content-md-center">
+              <div class="col col-md-auto" itemscope itemtype="https://schema.org/ImageObject">
+                <h3 class="services-options" role="heading" itemprop="name">Digital Graphics</h3>
+                <img src="images/digital_graphics_works/avatar_icon_large.jpg" alt="Thumbnail image of space cat icon" role="img" itemprop="thumbnailUrl">
               </div>
-              <div class="row justify-content-md-center">
-                <div class="col col-md-auto">
-                  <h3 class="services-options" role="heading">Photography</h3>
-                  <img src="images/photography_works/ivy_final_portrait_1.jpg" alt="Thumbnail image of final photography portrait of Ivy" role="img">
-                </div>
+            </div>
+            <div class="row justify-content-md-center">
+              <div class="col col-md-auto" itemscope itemtype="https://schema.org/ImageObject">
+                <h3 class="services-options" role="heading" itemprop="name">Photography</h3>
+                <img src="images/photography_works/ivy_final_portrait_1.jpg" alt="Thumbnail image of final photography portrait of Ivy" role="img" itemprop="thumbnailUrl">
               </div>
+            </div>
           </div>
         </div>
         <!-- Quote form section -->
-        <div class="quote" id="quote" role="article complementary">
+        <div class="quote" id="quote" role="article complementary" itemscope itemtype="https://schema.org/Service">
           <!-- Quote form header -->
           <div class="quote-heading text-center">
             <h1 role="heading">Quote</h1>
@@ -341,8 +343,8 @@
             <form>
               <!-- Form option -->
               <div class="quote-group">
-                <label for="service">Service</label>
-                <select class="form-control">
+                <label for="service" itemprop="serviceType">Service</label>
+                <select class="form-control" itemprop="serviceType">
                   <option role="option">-- Select --</option>
                   <option role="option">Video Editing</option>
                   <option role="option">Digital Graphics</option>
@@ -351,8 +353,8 @@
               </div>
               <!-- Form option -->
               <div class="quote-group">
-                <label for="service">Project Scale</label>
-                <select class="form-control">
+                <label for="scale" itemprop="projectScale">Project Scale</label>
+                <select class="form-control" itemprop="projectScale">
                   <option role="option">-- Select --</option>
                   <option role="option">Small (5-10hrs)</option>
                   <option role="option">Medium (10-20hrs)</option>
@@ -361,45 +363,46 @@
               </div>
               <!-- Form option -->
               <div class="quote-button text-center">
-                <button type="button" role="button">Get Quote!</button>
+                <button type="button" role="button" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                  Get Quote!
+                </button>
               </div>
-
             </form>
           </div>
         </div>
         <!-- Contact Page -->
-        <div class="contact" id="contact" role="article complementary">
-            <div class="form-heading">
-                <h1 role="heading">Contact Us!</h1>
-                <p>Have some questions? Just fill out the form and we'll get right back to you!</p>
-            </div>
-            <div class="contact-form">
-              <form role="form">
+            <div class="contact" id="contact" role="article complementary" itemscope itemtype="https://schema.org/ContactPage">
+              <div class="form-heading">
+                <h1 role="heading" itemprop="headline">Contact Us!</h1>
+                <p itemprop="description">Have some questions? Just fill out the form and we'll get right back to you!</p>
+              </div>
+              <div class="contact-form" itemprop="hasMap" itemscope itemtype="https://schema.org/Map">
+                <form role="form" itemprop="potentialAction" itemscope itemtype="https://schema.org/CommunicateAction">
 
-                <div class="form-group">
-                  <label for="name">Name</label>
-                  <input type="text" class="form-control" id="name" aria-describedby="enter-name" placeholder="Enter Name">
-                </div>
-
-                <div class="form-group">
-                  <label for="email">Email address</label>
-                  <input type="email" class="form-control" id="email" aria-describedby="enter-email" placeholder="Enter email">
-                </div>
-
-                <div class="form-group">
-                  <label for="subject">Subject</label>
-                  <input type="text" class="form-control" id="subject" aria-describedby="enter-subject" placeholder="Enter Subject">
-                </div>
-                <div class="form-group">
-                  <label for="message">Your Message</label>
-                  <textarea class="form-control" id="message" rows="8" aria-describedby="enter-msg"></textarea>
-                </div>
-
-                <div class="contact-button">
-                  <button type="submit" role="button">Send!</button>
-                </div>
-
-              </form>
+                  <div class="form-group" itemprop="sender">
+                    <label for="name" itemprop="name">Name</label>
+                    <input type="text" class="form-control" id="name" aria-describedby="enter-name" placeholder="Enter Name" itemprop="agent">
+                  </div>
+                
+                  <div class="form-group" itemprop="sender">
+                    <label for="email" itemprop="email">Email address</label>
+                    <input type="email" class="form-control" id="email" aria-describedby="enter-email" placeholder="Enter email" itemprop="recipient">
+                  </div>
+                
+                  <div class="form-group" itemprop="about">
+                    <label for="subject" itemprop="subjectOf">Subject</label>
+                    <input type="text" class="form-control" id="subject" aria-describedby="enter-subject" placeholder="Enter Subject">
+                  </div>
+                  <div class="form-group" itemprop="object">
+                    <label for="message" itemprop="text">Your Message</label>
+                    <textarea class="form-control" id="message" rows="8" aria-describedby="enter-msg"></textarea>
+                  </div>
+                
+                  <div class="contact-button">
+                    <button type="submit" role="button" itemprop="handler">Send!</button>
+                  </div>
+                
+                </form>
             </div>
             <div class="map">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d44864.148537239686!2d-75.82287234487819!3d45.348624864991244!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1680648965404!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
