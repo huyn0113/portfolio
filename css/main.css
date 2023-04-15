@@ -554,7 +554,7 @@ footer {
    /* Targets services-content images and increses image width */
    .services-content img {
     object-fit: cover;
-    width: 900px;
+    width: 950px;
     }
 
      /* Targets services-option container and adjusts positioning over the service images and increases font size */
@@ -589,5 +589,35 @@ footer {
     .quote-button button {
         font-size: 1.5rem;
     }
+
+   /* Targets form-heading container and adds padding to the left and the right */
+   .form-heading {
+    padding-left: 50px;
+    padding-right: 50px;
+   }
+   
+   /* Targets contact-form container and adds padding to the left and the right */
+   .contact-form {
+    padding-left: 50px;
+    padding-right: 50px;
+   }
+
+   /* Targets map container's iframe and increases map height */
+   .map iframe {
+    height: 600px;
+    padding: 50px;
+   }
+
+   /* Targets footer and adds a top border */
+   footer {
+    border-top: 1px solid gray
+   }
+
+   /* Targets footer p and adds padding to top and to the left as well as increases font size */
+   footer p {
+    padding-left: 50px;
+    padding-top: 20px;
+    font-size: 1.5rem;
+   }
 
 }
