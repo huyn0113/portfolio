@@ -373,7 +373,7 @@ footer {
 
 /* Targets quote-button container's button and customizes it by changing the font color, adds padding to the left and right as well as adding a border radius and solid 1px gray border */
 .quote-button button {
-    color: gray;
+    color: white;
     padding-left: 20px;
     padding-right: 20px;
     border-radius: 20px;
