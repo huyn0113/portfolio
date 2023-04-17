@@ -70,7 +70,8 @@
           <ul class="nav nav-pills nav-justified" role="list menu" aria-label="site menu">
               <!-- Link with logo image -->
               <a class="navbar-brand" href="page.html" aria-haspopup="true" itemprop="url">
-                  <img src="images/jess_huynh_portfolio_logo.png" width="60" height="60" alt="Logo image of Jess Huynh's portfolio brand" class="align-middle" role="img" itemprop="logo">
+                  <img src="images/jess_huynh_portfolio_logo.png" width="60" height="60" 
+                  alt="Logo image of Jess Huynh's portfolio brand" class="align-middle" role="img" itemprop="logo">
               </a>
               <li class="nav-item" role="listitem menubar" itemprop="name">
                   <a class="nav-link text-secondary" href="#about" role="link" aria-haspopup="true" itemprop="url">About</a>
@@ -94,7 +95,33 @@
         <div class="landing" id="landing" role="complementary">
           <!-- Container with professional image of self -->
           <div class="portfolio-image" itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
-              <img src="images/image_of_self/photo_of_jess-huynh-500_x_500.jpg" alt="Selfie image of Jess Huynh" class="img-fluid mx-auto d-block" role="img" itemprop="contentUrl">
+
+            <!-- Optimized and responsive image of self -->
+            <picture>
+              <!-- 1024px and below-->
+              <source srcset="images/image_of_self/photo_of_jess-huynh-derivatives/photo_of_jess-huynh-1024_x_1024.jpg,
+                              images/image_of_self/photo_of_jess-huynh-derivatives/photo_of_jess-huynh-2048_x_2048.jpg 2x
+                              images/image_of_self/photo_of_jess-huynh-derivatives/photo_of_jess-huynh-3072_x_3072.jpg 3x"
+                      media="(min-width: 1024px)"> 
+
+              <!-- 770px and below -->
+              <source srcset="images/image_of_self/photo_of_jess-huynh-derivatives/photo_of_jess-huynh-770_x_770.jpg,
+                              images/image_of_self/photo_of_jess-huynh-derivatives/photo_of_jess-huynh-1540_x_1540.jpg 2x
+                              images/image_of_self/photo_of_jess-huynh-derivatives/photo_of_jess-huynh-2310_x_2310.jpg 3x"
+                      media="(min-width: 770px)"> 
+
+              <!-- 480px and below -->
+               <source srcset="images/image_of_self/photo_of_jess-huynh-derivatives/photo_of_jess-huynh-480_x_480.jpg,
+                              images/image_of_self/photo_of_jess-huynh-derivatives/photo_of_jess-huynh-960_x_960.jpg 2x
+                              images/image_of_self/photo_of_jess-huynh-derivatives/photo_of_jess-huynh-1140_x_1140.jpg 3x"
+                      media="(min-width: 480px)"> 
+                      
+              <img src="images/image_of_self/photo_of_jess-huynh-derivatives/photo_of_jess-huynh-480_x_480.jpg" 
+                    alt="Selfie image of Jess Huynh"
+                    class="image-fluid mx-auto d-block"
+                    role="img">
+            </picture>
+            
           </div>
           <!--Container with introductory content -->
           <div class="landing-text text-center" role="article" aria-label="introductory content">
@@ -234,18 +261,133 @@
               <div class="container text-center">
                   <div class="row g-0">
                       <div class="col" itemprop="contentUrl">
-                          <img src="images/digital_graphics_works/avatar_icon_large.jpg" alt="Digital art of a space cat on the moon" role="img" aria-label="image" itemprop="image">
+
+                        <!-- Optimized and responsive image of avatar icon -->
+                        <picture>
+
+                          <!--1024px and below-->
+                          <source srcset="images/digital_graphics_works/avatar_icon_large-derivatives/avatar_icon_large-1024_x_1024.jpg,
+                                          images/digital_graphics_works/avatar_icon_large-derivatives/avatar_icon_large-2048_x_2048.jpg 2x,
+                                          images/digital_graphics_works/avatar_icon_large-derivatives/avatar_icon_large-3072_x_3072.jpg 3x"
+                                  media="(min-width: 1024px)">
+
+                          <!--770px and below-->
+                          <source srcset="images/digital_graphics_works/avatar_icon_large-derivatives/avatar_icon_large-770_x_770.jpg,
+                                          images/digital_graphics_works/avatar_icon_large-derivatives/avatar_icon_large-1540_x_1540.jpg 2x,
+                                          images/digital_graphics_works/avatar_icon_large-derivatives/avatar_icon_large-2310_x_2310.jpg 3x"
+                                  media="(min-width: 1024px)">
+
+                          <!--480px and below-->
+                          <source srcset="images/digital_graphics_works/avatar_icon_large-derivatives/avatar_icon_large-480_x_480.jpg,
+                                          images/digital_graphics_works/avatar_icon_large-derivatives/avatar_icon_large-960_x_960.jpg 2x,
+                                          images/digital_graphics_works/avatar_icon_large-derivatives/avatar_icon_large-1140_x_1140.jpg 3x"
+                                  media="(min-width: 480px)">
+
+                          <!-- Fallback image -->
+                          <img src="images/digital_graphics_works/avatar_icon_large-derivatives/avatar_icon_large-480_x_480.jpg" 
+                                alt="Digital art of a space cat on the moon" 
+                                role="img" 
+                                aria-label="image" 
+                                itemprop="image">
+
+                        </picture>
+
                       </div>
                       <div class="col" itemprop="contentUrl">
-                          <img src="images/digital_graphics_works/nike_logo_redesign.png" alt="Redesign of nike logo with a green swoosh and stars" role="img" aria-label="image" itemprop="image">
+
+                        <!-- Optimized and responsive image of nike logo -->
+                        <picture>
+                          <!--1024px and below-->
+                          <source srcset="images/digital_graphics_works/nike_logo_redesign-derivatives/nike_logo_redesign-1024_x_1024.png,
+                                          images/digital_graphics_works/nike_logo_redesign-derivatives/nike_logo_redesign-2048_x_2048.png 2x,
+                                          images/digital_graphics_works/nike_logo_redesign-derivatives/nike_logo_redesign-3072_x_3072.png 3x"
+                                  media="(min-width: 1024px)">
+
+                          <!--770px and below-->
+                          <source srcset="images/digital_graphics_works/nike_logo_redesign-derivatives/nike_logo_redesign-770_x_770.png,
+                                          images/digital_graphics_works/nike_logo_redesign-derivatives/nike_logo_redesign-1540_x_1540.png 2x,
+                                          images/digital_graphics_works/nike_logo_redesign-derivatives/nike_logo_redesign-2310_x_2310.png 3x"
+                                  media="(min-width: 770px)">
+
+                          <!--480px and below-->
+                          <source srcset="images/digital_graphics_works/nike_logo_redesign-derivatives/nike_logo_redesign-480_x_480.png,
+                                          images/digital_graphics_works/nike_logo_redesign-derivatives/nike_logo_redesign-960_x_960.png 2x,
+                                          images/digital_graphics_works/nike_logo_redesign-derivatives/nike_logo_redesign-1140_x_1140.png 3x"
+                                  media="(min-width: 480px)">
+
+
+                          <!-- Fallback image -->
+                          <img src="images/digital_graphics_works/nike_logo_redesign-derivatives/nike_logo_redesign-480_x_480.png" 
+                                alt="Redesign of nike logo with a green swoosh and stars" 
+                                role="img" aria-label="image" 
+                                itemprop="image">
+                        </picture>
+
                       </div>
                   </div>
                   <div class="row g-0">
                       <div class="col" itemprop="contentUrl">
-                          <img src="images/digital_graphics_works/faetoi_brand_logo.png" alt="Personal brand logo" role="img" aria-label="image" itemprop="image">
+
+                        <!-- Optimized and responsive image of faetoi logo -->
+                        <picture>
+                          <!-- 1024px and below-->
+                          <source srcset="images/digital_graphics_works/faetoi_brand_logo-derivatives/faetoi_brand_logo-1024_x_1024.png,
+                                          images/digital_graphics_works/faetoi_brand_logo-derivatives/faetoi_brand_logo-2048_x_2048.png 2x,
+                                          images/digital_graphics_works/faetoi_brand_logo-derivatives/faetoi_brand_logo-3072_x_3072.png 3x"
+                                  media="(min-width: 1024px)">
+
+                          <!-- 770px and below-->
+                          <source srcset="images/digital_graphics_works/faetoi_brand_logo-derivatives/faetoi_brand_logo-770_x_770.png,
+                                          images/digital_graphics_works/faetoi_brand_logo-derivatives/faetoi_brand_logo-1540_x_1540.png 2x,
+                                          images/digital_graphics_works/faetoi_brand_logo-derivatives/faetoi_brand_logo-2310_x_2310.png 3x"
+                                  media="(min-width: 770px)">
+
+                          <!-- 480px and below-->
+                          <source srcset="images/digital_graphics_works/faetoi_brand_logo-derivatives/faetoi_brand_logo-480_x_480.png,
+                                          images/digital_graphics_works/faetoi_brand_logo-derivatives/faetoi_brand_logo-960_x_960.png 2x,
+                                          images/digital_graphics_works/faetoi_brand_logo-derivatives/faetoi_brand_logo-1140_x_1140.png 3x"
+                                  media="(min-width: 480px)">
+
+                          <!-- Fallback image -->
+                          <img src="images/digital_graphics_works/faetoi_brand_logo-derivatives/faetoi_brand_logo-480_x_480.png" 
+                                alt="Personal brand logo" 
+                                role="img" 
+                                aria-label="image" 
+                                itemprop="image">
+                        </picture>
+
+
                       </div>
                       <div class="col" itemprop="contentUrl">
-                          <img src="images/digital_graphics_works/jinx_the_cat_vector.png" alt="Jinx the cat vector image" role="img" aria-label="image" itemprop="image">
+                        <!-- Optimized and responsive image of jinx the cat vector -->
+                        <picture>
+
+                          <!-- 1024px and below-->
+                            <source srcset="images/digital_graphics_works/jinx_the_cat_vector-derivatives/jinx_the_cat_vector-1024_x_1024.png,
+                                            images/digital_graphics_works/jinx_the_cat_vector-derivatives/jinx_the_cat_vector-2048_x_2048.png 2x,
+                                            images/digital_graphics_works/jinx_the_cat_vector-derivatives/jinx_the_cat_vector-3072_x_3072.png 3x"
+                                  media="(min-width: 1024px)">
+
+                          <!-- 770px and below-->
+                            <source srcset="images/digital_graphics_works/jinx_the_cat_vector-derivatives/jinx_the_cat_vector-770_x_770.jpng,
+                                            images/digital_graphics_works/jinx_the_cat_vector-derivatives/jinx_the_cat_vector-1540_x_1540.png 2x,
+                                            images/digital_graphics_works/jinx_the_cat_vector-derivatives/jinx_the_cat_vector-2310_x_2310.png 3x"
+                                  media="(min-width: 770px)">
+
+                          <!-- 770px and below-->
+                            <source srcset="images/digital_graphics_works/jinx_the_cat_vector-derivatives/jinx_the_cat_vector-480_x_480.png,
+                                            images/digital_graphics_works/jinx_the_cat_vector-derivatives/jinx_the_cat_vector-960_x_960.png 2x,
+                                            images/digital_graphics_works/jinx_the_cat_vector-derivatives/jinx_the_cat_vector-1140_x_1140.png 3x"
+                                  media="(min-width: 770px)">
+
+                          <!-- Fallback image -->
+                          <img src="images/digital_graphics_works/jinx_the_cat_vector-derivatives/jinx_the_cat_vector-480_x_480.png" 
+                                alt="Jinx the cat vector image" 
+                                role="img" 
+                                aria-label="image" 
+                                itemprop="image">
+                        </picture>
+                      
                       </div>
                   </div>
               </div>
@@ -268,31 +410,250 @@
             </ol>
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img class="d-block w-100" src="images/photography_works/arany_and_ivy_session1.jpg" alt="Photography piece of Ivy and Arany at a stairwell" role="img">
+                <!-- Optimized and responsive image of arany and ivy session 1 -->
+                <picture>
+                  <!-- 1024px and below -->
+                  <source srcset="images/photography_works/arany_and_ivy_session1-derivatives/arany_and_ivy_session1-1024_x_1534.jpg,
+                                  images/photography_works/arany_and_ivy_session1-derivatives/arany_and_ivy_session1-2048_x_3072.jpg 2x
+                                  images/photography_works/arany_and_ivy_session1-derivatives/arany_and_ivy_session1-3072_x_4609.jpg 3x"
+                            media="(min-width: 1024px)">
+
+                   <!-- 770px and below -->
+                  <source srcset="images/photography_works/arany_and_ivy_session1-derivatives/arany_and_ivy_session1-770_x_1155.jpg,
+                                  images/photography_works/arany_and_ivy_session1-derivatives/arany_and_ivy_session1-1540_x_2310.jpg 2x
+                                  images/photography_works/arany_and_ivy_session1-derivatives/arany_and_ivy_session1-2310_x_3465.jpg 3x"
+                            media="(min-width: 770px)">
+
+                  <!-- 480px and below -->
+                  <source srcset="images/photography_works/arany_and_ivy_session1-derivatives/arany_and_ivy_session1-480_x_720.jpg,
+                                  images/photography_works/arany_and_ivy_session1-derivatives/arany_and_ivy_session1-960_x_1440.jpg 2x
+                                  images/photography_works/arany_and_ivy_session1-derivatives/arany_and_ivy_session1-1140_x_1710.jpg 3x"
+                            media="(min-width: 480px)">
+                                
+                  <!-- Fallback image -->
+                  <img class="d-block w-100" src="images/photography_works/arany_and_ivy_session1-derivatives/arany_and_ivy_session1-480_x_720.jpg" 
+                        alt="Photography piece of Ivy and Arany at a stairwell" 
+                        role="img">
+                </picture>
               </div>
               <div class="carousel-item">
-                <img class="d-block w-100" src="images/photography_works/arany_and_ivy_session2.jpg" alt="Photography piece of Arany going up the escalator" role="img">
+                 <!-- Optimized and responsive image of arany and ivy session 2 -->
+                 <picture>
+                  <!-- 1024px and below -->
+                  <source srcset="images/photography_works/arany_and_ivy_session2-derivatives/arany_and_ivy_session2-1024_x_1534.jpg,
+                                  images/photography_works/arany_and_ivy_session2-derivatives/arany_and_ivy_session2-2048_x_3072.jpg 2x
+                                  images/photography_works/arany_and_ivy_session2-derivatives/arany_and_ivy_session2-3072_x_4609.jpg 3x"
+                            media="(min-width: 1024px)">
+
+                   <!-- 770px and below -->
+                  <source srcset="images/photography_works/arany_and_ivy_session2-derivatives/arany_and_ivy_session2-770_x_1155.jpg,
+                                  images/photography_works/arany_and_ivy_session2-derivatives/arany_and_ivy_session2-1540_x_2310.jpg 2x
+                                  images/photography_works/arany_and_ivy_session2-derivatives/arany_and_ivy_session2-2310_x_3465.jpg 3x"
+                            media="(min-width: 770px)">
+
+                  <!-- 480px and below -->
+                  <source srcset="images/photography_works/arany_and_ivy_session2-derivatives/arany_and_ivy_session2-480_x_720.jpg,
+                                  images/photography_works/arany_and_ivy_session2-derivatives/arany_and_ivy_session2-960_x_1440.jpg 2x
+                                  images/photography_works/arany_and_ivy_session2-derivatives/arany_and_ivy_session2-1140_x_1710.jpg 3x"
+                            media="(min-width: 480px)">
+                                
+                  <!-- Fallback image -->
+                  <img class="d-block w-100" src="images/photography_works/arany_and_ivy_session2-derivatives/arany_and_ivy_session2-480_x_720.jpg" 
+                        alt="Photography piece of Arany going up the escalator" 
+                        role="img">
+                </picture>
               </div>
               <div class="carousel-item">
-                <img class="d-block w-100" src="images/photography_works/arany_and_ivy_session3.jpg" alt="Photography piece of a bunch of vinyl CDs" role="img">
+                <!-- Optimized and responsive image of arany and ivy session 3 -->
+                <picture>
+                  <!-- 1024px and below -->
+                  <source srcset="images/photography_works/arany_and_ivy_session3-derivatives/arany_and_ivy_session3-1024_x_1534.jpg,
+                                  images/photography_works/arany_and_ivy_session3-derivatives/arany_and_ivy_session3-2048_x_3072.jpg 2x
+                                  images/photography_works/arany_and_ivy_session3-derivatives/arany_and_ivy_session3-3072_x_4609.jpg 3x"
+                            media="(min-width: 1024px)">
+
+                   <!-- 770px and below -->
+                  <source srcset="images/photography_works/arany_and_ivy_session3-derivatives/arany_and_ivy_session3-770_x_1155.jpg,
+                                  images/photography_works/arany_and_ivy_session3-derivatives/arany_and_ivy_session3-1540_x_2310.jpg 2x
+                                  images/photography_works/arany_and_ivy_session3-derivatives/arany_and_ivy_session3-2310_x_3465.jpg 3x"
+                            media="(min-width: 770px)">
+
+                  <!-- 480px and below -->
+                  <source srcset="images/photography_works/arany_and_ivy_session3-derivatives/arany_and_ivy_session3-480_x_720.jpg,
+                                  images/photography_works/arany_and_ivy_session3-derivatives/arany_and_ivy_session3-960_x_1440.jpg 2x
+                                  images/photography_works/arany_and_ivy_session3-derivatives/arany_and_ivy_session3-1140_x_1710.jpg 3x"
+                            media="(min-width: 480px)">
+                                
+                  <!-- Fallback image -->
+                  <img class="d-block w-100" src="images/photography_works/arany_and_ivy_session3-derivatives/arany_and_ivy_session3-480_x_720.jpg" 
+                        alt="Photography piece of a bunch of vinyl CDs" 
+                        role="img">
+                </picture>
               </div>
               <div class="carousel-item">
-                <img class="d-block w-100" src="images/photography_works/ivy_final_portrait_1.jpg" alt="Photography portrait piece of Ivy with hands on face looking up" role="img">
+                <!-- Optimized and responsive image of ivy final assignment portrait 1 -->
+                <picture>
+                  <!-- 1024px and below -->
+                  <source srcset="images/photography_works/ivy_final_portrait_1-derivatives/ivy_final_portrait_1-1024_x_1534.jpg,
+                                  images/photography_works/ivy_final_portrait_1-derivatives/ivy_final_portrait_1-2048_x_3072.jpg 2x,
+                                  images/photography_works/ivy_final_portrait_1-derivatives/ivy_final_portrait_1-3072_x_4609.jpg 3x"
+                          media="(min-width: 1024px)">
+
+                  <!-- 770px and below -->
+                  <source srcset="images/photography_works/ivy_final_portrait_1-derivatives/ivy_final_portrait_1-770_x_1155.jpg,
+                                  images/photography_works/ivy_final_portrait_1-derivatives/ivy_final_portrait_1-1540_x_2310.jpg 2x,
+                                  images/photography_works/ivy_final_portrait_1-derivatives/ivy_final_portrait_1-2310_x_3465.jpg 3x"
+                          media="(min-width: 770px)">
+
+                  <!-- 480px and below -->
+                  <source srcset="images/photography_works/ivy_final_portrait_1-derivatives/ivy_final_portrait_1-480_x_720.jpg,
+                                  images/photography_works/ivy_final_portrait_1-derivatives/ivy_final_portrait_1-960_x_1440.jpg 2x,
+                                  images/photography_works/ivy_final_portrait_1-derivatives/ivy_final_portrait_1-1140_x_1710.jpg 3x"
+                          media="(min-width: 480px)">
+
+
+                  <!-- Fallback image -->
+                  <img class="d-block w-100" src="images/photography_works/ivy_final_portrait_1-derivatives/ivy_final_portrait_1-480_x_720.jpg" 
+                        alt="Photography portrait piece of Ivy with hands on face looking up" 
+                        role="img" 
+                        itemprop="thumbnailUrl">
+                </picture>
               </div>
               <div class="carousel-item">
-                <img class="d-block w-100" src="images/photography_works/ivy_final_portrait_2.jpg" alt="Photography portrait piece of Ivy holding a candle and looking away" role="img">
+                <!-- Optimized and responsive image of ivy final assignment portrait 2 -->
+                <picture>
+                  <!-- 1024px and below -->
+                  <source srcset="images/photography_works/ivy_final_portrait_2-derivatives/ivy_final_portrait_2-1024_x_1534.jpg,
+                                  images/photography_works/ivy_final_portrait_2-derivatives/ivy_final_portrait_2-2048_x_3072.jpg 2x,
+                                  images/photography_works/ivy_final_portrait_2-derivatives/ivy_final_portrait_2-3072_x_4609.jpg 3x"
+                          media="(min-width: 1024px)">
+
+                  <!-- 770px and below -->
+                  <source srcset="images/photography_works/ivy_final_portrait_2-derivatives/ivy_final_portrait_2-770_x_1155.jpg,
+                                  images/photography_works/ivy_final_portrait_2-derivatives/ivy_final_portrait_2-1540_x_2310.jpg 2x,
+                                  images/photography_works/ivy_final_portrait_2-derivatives/ivy_final_portrait_2-2310_x_3465.jpg 3x"
+                          media="(min-width: 770px)">
+
+                  <!-- 480px and below -->
+                  <source srcset="images/photography_works/ivy_final_portrait_2-derivatives/ivy_final_portrait_2-480_x_720.jpg,
+                                  images/photography_works/ivy_final_portrait_2-derivatives/ivy_final_portrait_2-960_x_1440.jpg 2x,
+                                  images/photography_works/ivy_final_portrait_2-derivatives/ivy_final_portrait_2-1140_x_1710.jpg 3x"
+                          media="(min-width: 480px)">
+
+                  <!-- Fallback image -->
+                  <img class="d-block w-100" src="images/photography_works/ivy_final_portrait_2-derivatives/ivy_final_portrait_2-480_x_720.jpg" 
+                        alt="Photography portrait piece of Ivy holding a candle and looking away" 
+                        role="img">
+                </picture>
+              </div>
+
+              <div class="carousel-item">
+                <!-- Optimized and responsive image of ivy final assignment portrait 3 -->
+                <picture>
+                  <!-- 1024px and below -->
+                  <source srcset="images/photography_works/ivy_final_portrait_3-derivatives/ivy_final_portrait_3-1024_x_1534.jpg,
+                                  images/photography_works/ivy_final_portrait_3-derivatives/ivy_final_portrait_3-2048_x_3072.jpg 2x,
+                                  images/photography_works/ivy_final_portrait_3-derivatives/ivy_final_portrait_3-3072_x_4609.jpg 3x"
+                          media="(min-width: 1024px)">
+
+                  <!-- 770px and below -->
+                  <source srcset="images/photography_works/ivy_final_portrait_3-derivatives/ivy_final_portrait_3-770_x_1155.jpg,
+                                  images/photography_works/ivy_final_portrait_3-derivatives/ivy_final_portrait_3-1540_x_2310.jpg 2x,
+                                  images/photography_works/ivy_final_portrait_3-derivatives/ivy_final_portrait_3-2310_x_3465.jpg 3x"
+                          media="(min-width: 770px)">
+
+                  <!-- 480px and below -->
+                  <source srcset="images/photography_works/ivy_final_portrait_3-derivatives/ivy_final_portrait_3-480_x_720.jpg,
+                                  images/photography_works/ivy_final_portrait_3-derivatives/ivy_final_portrait_3-960_x_1440.jpg 2x,
+                                  images/photography_works/ivy_final_portrait_3-derivatives/ivy_final_portrait_3-1140_x_1710.jpg 3x"
+                          media="(min-width: 480px)">
+
+                  <!-- Fallback image -->
+                  <img class="d-block w-100" src="images/photography_works/ivy_final_portrait_3-derivatives/ivy_final_portrait_3-480_x_720.jpg" 
+                        alt="Upclose photography portrait piece of Ivy holding two incense candles" 
+                        role="img">
+                </picture>
               </div>
               <div class="carousel-item">
-                <img class="d-block w-100" src="images/photography_works/ivy_final_portrait_3.jpg" alt="Upclose photography portrait piece of Ivy holding two incense candles" role="img">
+                <!-- Optimized and responsive image of ivy midterm assignment portrait 1 -->
+                <picture>
+                  <!-- 1024px and below -->
+                  <source srcset="images/photography_works/ivy_midterm_portrait_1-derivatives/ivy_midterm_portrait_1-1024_x_1534.jpg,
+                                  images/photography_works/ivy_midterm_portrait_1-derivatives/ivy_midterm_portrait_1-2048_x_3072.jpg 2x,
+                                  images/photography_works/ivy_midterm_portrait_1-derivatives/ivy_midterm_portrait_1-3072_x_4609.jpg 3x"
+                          media="(min-width: 1024px)">
+                  
+                   <!-- 770px and below -->
+                  <source srcset="images/photography_works/ivy_midterm_portrait_1-derivatives/ivy_midterm_portrait_1-770_x_1155.jpg,
+                                  images/photography_works/ivy_midterm_portrait_1-derivatives/ivy_midterm_portrait_1-1540_x_2310.jpg 2x,
+                                  images/photography_works/ivy_midterm_portrait_1-derivatives/ivy_midterm_portrait_1-2310_x_3465.jpg 3x"
+                          media="(min-width: 770px)">
+
+                  <!-- 480px and below -->
+                  <source srcset="images/photography_works/ivy_midterm_portrait_1-derivatives/ivy_midterm_portrait_1-480_x_720.jpg,
+                                  images/photography_works/ivy_midterm_portrait_1-derivatives/ivy_midterm_portrait_1-960_x_1440.jpg 2x,
+                                  images/photography_works/ivy_midterm_portrait_1-derivatives/ivy_midterm_portrait_1-1140_x_1710.jpg 3x"
+                          media="(min-width: 480px)">
+
+                  <!-- Fallback image -->
+                  <img class="d-block w-100" src="images/photography_works/ivy_midterm_portrait_1-derivatives/ivy_midterm_portrait_1-480_x_720.jpg" 
+                        alt="Photography piece of a titled angle of Ivy in a hallway pointing at the camera" 
+                        role="img">
+                </picture>
               </div>
               <div class="carousel-item">
-                <img class="d-block w-100" src="images/photography_works/ivy_midterm_portrait_1.jpg" alt="Photography piece of a titled angle of Ivy in a hallway pointing at the camera" role="img">
+                <!-- Optimized and responsive image of ivy midterm assignment portrait 2 -->
+                <picture>
+                  <!-- 1024px and below -->
+                  <source srcset="images/photography_works/ivy_midterm_portrait_2-derivatives/ivy_midterm_portrait_2-1024_x_1534.jpg,
+                                  images/photography_works/ivy_midterm_portrait_2-derivatives/ivy_midterm_portrait_2-2048_x_3072.jpg 2x,
+                                  images/photography_works/ivy_midterm_portrait_2-derivatives/ivy_midterm_portrait_2-3072_x_4609.jpg 3x"
+                          media="(min-width: 1024px)">
+                  
+                   <!-- 770px and below -->
+                  <source srcset="images/photography_works/ivy_midterm_portrait_2-derivatives/ivy_midterm_portrait_2-770_x_1155.jpg,
+                                  images/photography_works/ivy_midterm_portrait_2-derivatives/ivy_midterm_portrait_2-1540_x_2310.jpg 2x,
+                                  images/photography_works/ivy_midterm_portrait_2-derivatives/ivy_midterm_portrait_2-2310_x_3465.jpg 3x"
+                          media="(min-width: 770px)">
+
+                  <!-- 480px and below -->
+                  <source srcset="images/photography_works/ivy_midterm_portrait_2-derivatives/ivy_midterm_portrait_2-480_x_720.jpg,
+                                  images/photography_works/ivy_midterm_portrait_2-derivatives/ivy_midterm_portrait_2-960_x_1440.jpg 2x,
+                                  images/photography_works/ivy_midterm_portrait_2-derivatives/ivy_midterm_portrait_2-1140_x_1710.jpg 3x"
+                          media="(min-width: 480px)">
+
+                  <!-- Fallback image -->
+                  <img class="d-block w-100" src="images/photography_works/ivy_midterm_portrait_2-derivatives/ivy_midterm_portrait_2-480_x_720.jpg" 
+                        alt="Photography piece of Ivy looking at the camera through stair bars" 
+                        role="img">
+                </picture>
               </div>
               <div class="carousel-item">
-                <img class="d-block w-100" src="images/photography_works/ivy_midterm_portrait_2.jpg" alt="Photography piece of Ivy looking at the camera through stair bars" role="img">
-              </div>
-              <div class="carousel-item">
-                <img class="d-block w-100" src="images/photography_works/ivy_midterm_portrait_3.jpg" alt="Photography piece of of Ivy under a light with her hand extended towards the camera" role="img">
+                <!-- Optimized and responsive image of ivy midterm assignment portrait 3 -->
+                <picture>
+                  <!-- 1024px and below -->
+                  <source srcset="images/photography_works/ivy_midterm_portrait_3-derivatives/ivy_midterm_portrait_3-1024_x_1534.jpg,
+                                  images/photography_works/ivy_midterm_portrait_3-derivatives/ivy_midterm_portrait_3-2048_x_3072.jpg 2x,
+                                  images/photography_works/ivy_midterm_portrait_3-derivatives/ivy_midterm_portrait_3-3072_x_4609.jpg 3x"
+                          media="(min-width: 1024px)">
+                  
+                   <!-- 770px and below -->
+                  <source srcset="images/photography_works/ivy_midterm_portrait_3-derivatives/ivy_midterm_portrait_3-770_x_1155.jpg,
+                                  images/photography_works/ivy_midterm_portrait_3-derivatives/ivy_midterm_portrait_3-1540_x_2310.jpg 2x,
+                                  images/photography_works/ivy_midterm_portrait_3-derivatives/ivy_midterm_portrait_3-2310_x_3465.jpg 3x"
+                          media="(min-width: 770px)">
+
+                  <!-- 480px and below -->
+                  <source srcset="images/photography_works/ivy_midterm_portrait_3-derivatives/ivy_midterm_portrait_3-480_x_720.jpg,
+                                  images/photography_works/ivy_midterm_portrait_3-derivatives/ivy_midterm_portrait_3-960_x_1440.jpg 2x,
+                                  images/photography_works/ivy_midterm_portrait_3-derivatives/ivy_midterm_portrait_3-1140_x_1710.jpg 3x"
+                          media="(min-width: 480px)">
+
+                  <!-- Fallback image -->
+                  <img class="d-block w-100" src="images/photography_works/ivy_midterm_portrait_2-derivatives/ivy_midterm_portrait_2-480_x_720.jpg" 
+                        alt="Photography piece of of Ivy under a light with her hand extended towards the camera" 
+                        role="img">
+                </picture>
               </div>
             </div>
             <a class="carousel-control-prev" href="#carouselExampleIndicators-2" role="button" data-slide="prev">
@@ -314,19 +675,99 @@
             <div class="row justify-content-md-center">
               <div class="col col-md-auto" itemscope itemtype="https://schema.org/VideoObject">
                 <h3 class="services-options" role="heading" itemprop="name">Video Editing</h3>
-                <img src="images/video_thumbnails/geto_kurxxed_emeraldz_edit_thumbnail.png" alt="Thumbnail image of videoe edit" role="img" itemprop="thumbnailUrl">
+
+                <!-- Optimized and responsive image of video editing thumbnail-->
+                <picture>
+                  <!-- 1024px and below -->
+                  <source srcset="images/video_thumbnails/geto_kurxxed_emeraldz_edit_thumbnail-derivatives/geto_kurxxed_emeraldz_edit_thumbnail-1024_x_1024.png,
+                                  images/video_thumbnails/geto_kurxxed_emeraldz_edit_thumbnail-derivatives/geto_kurxxed_emeraldz_edit_thumbnail-2048_x_2048.png 2x,images/video_thumbnails/geto_kurxxed_emeraldz_edit_thumbnail-derivatives/geto_kurxxed_emeraldz_edit_thumbnail-3072_x_3072.png 3x"
+                          media="(min-width: 1024px)">
+
+                  <!-- 770px and below -->
+                  <source srcset="images/video_thumbnails/geto_kurxxed_emeraldz_edit_thumbnail-derivatives/geto_kurxxed_emeraldz_edit_thumbnail-770_x_770.png,
+                                  images/video_thumbnails/geto_kurxxed_emeraldz_edit_thumbnail-derivatives/geto_kurxxed_emeraldz_edit_thumbnail-1540_x_1540.png 2x,images/video_thumbnails/geto_kurxxed_emeraldz_edit_thumbnail-derivatives/geto_kurxxed_emeraldz_edit_thumbnail-2310_x_2310.png 3x"
+                          media="(min-width: 770px)">
+
+                  <!-- 480px and below -->
+                  <source srcset="images/video_thumbnails/geto_kurxxed_emeraldz_edit_thumbnail-derivatives/geto_kurxxed_emeraldz_edit_thumbnail-480_x_480.png,
+                                  images/video_thumbnails/geto_kurxxed_emeraldz_edit_thumbnail-derivatives/geto_kurxxed_emeraldz_edit_thumbnail-960_x_960.png 2x,images/video_thumbnails/geto_kurxxed_emeraldz_edit_thumbnail-derivatives/geto_kurxxed_emeraldz_edit_thumbnail-1140_x_1140.png 3x"
+                          media="(min-width: 770px)">
+
+                  <!-- Fallback image-->
+                  <img src="images/video_thumbnails/geto_kurxxed_emeraldz_edit_thumbnail-derivatives/geto_kurxxed_emeraldz_edit_thumbnail-480_x_480.png" 
+                        alt="Thumbnail image of videoe edit" 
+                        role="img" 
+                        itemprop="thumbnailUrl">
+                </picture>
+
               </div>
             </div>
             <div class="row justify-content-md-center">
               <div class="col col-md-auto" itemscope itemtype="https://schema.org/ImageObject">
                 <h3 class="services-options" role="heading" itemprop="name">Digital Graphics</h3>
-                <img src="images/digital_graphics_works/avatar_icon_large.jpg" alt="Thumbnail image of space cat icon" role="img" itemprop="thumbnailUrl">
+
+                <!-- Optimized and responsive image of avatar icon logo-->
+                <picture>
+                  <!--1024px and below-->
+                    <source srcset="images/digital_graphics_works/avatar_icon_large-derivatives/avatar_icon_large-1024_x_1024.jpg,
+                                    images/digital_graphics_works/avatar_icon_large-derivatives/avatar_icon_large-2048_x_2048.jpg 2x,
+                                    images/digital_graphics_works/avatar_icon_large-derivatives/avatar_icon_large-3072_x_3072.jpg 3x"
+                            media="(min-width: 1024px)">
+
+                  <!--770px and below-->
+                    <source srcset="images/digital_graphics_works/avatar_icon_large-derivatives/avatar_icon_large-770_x_770.jpg,
+                                    images/digital_graphics_works/avatar_icon_large-derivatives/avatar_icon_large-1540_x_1540.jpg 2x,
+                                    images/digital_graphics_works/avatar_icon_large-derivatives/avatar_icon_large-2310_x_2310.jpg 3x"
+                            media="(min-width: 1024px)">
+
+                  <!--480px and below-->
+                      <source srcset="images/digital_graphics_works/avatar_icon_large-derivatives/avatar_icon_large-480_x_480.jpg,
+                                      images/digital_graphics_works/avatar_icon_large-derivatives/avatar_icon_large-960_x_960.jpg 2x,
+                                      images/digital_graphics_works/avatar_icon_large-derivatives/avatar_icon_large-1140_x_1140.jpg 3x"
+                              media="(min-width: 480px)">
+
+                  <!--Fallback image-->
+                  <img src="images/digital_graphics_works/avatar_icon_large-derivatives/avatar_icon_large-480_x_480.jpg" 
+                        alt="Thumbnail image of space cat icon" 
+                        role="img" 
+                        itemprop="thumbnailUrl">
+                </picture>
+
               </div>
             </div>
             <div class="row justify-content-md-center">
               <div class="col col-md-auto" itemscope itemtype="https://schema.org/ImageObject">
                 <h3 class="services-options" role="heading" itemprop="name">Photography</h3>
-                <img src="images/photography_works/ivy_final_portrait_1.jpg" alt="Thumbnail image of final photography portrait of Ivy" role="img" itemprop="thumbnailUrl">
+
+                <!-- Optimized and responsive image of ivy final assignment portrait 1-->
+                <picture>
+
+                  <!-- 1024px and below -->
+                  <source srcset="images/photography_works/ivy_final_portrait_1-derivatives/ivy_final_portrait_1-1024_x_1534.jpg,
+                                  images/photography_works/ivy_final_portrait_1-derivatives/ivy_final_portrait_1-2048_x_3072.jpg 2x,
+                                  images/photography_works/ivy_final_portrait_1-derivatives/ivy_final_portrait_1-3072_x_4609.jpg 3x"
+                          media="(min-width: 1024px)">
+
+                  <!-- 770px and below -->
+                  <source srcset="images/photography_works/ivy_final_portrait_1-derivatives/ivy_final_portrait_1-770_x_1155.jpg,
+                                  images/photography_works/ivy_final_portrait_1-derivatives/ivy_final_portrait_1-1540_x_2310.jpg 2x,
+                                  images/photography_works/ivy_final_portrait_1-derivatives/ivy_final_portrait_1-2310_x_3465.jpg 3x"
+                          media="(min-width: 770px)">
+
+                  <!-- 480px and below -->
+                  <source srcset="images/photography_works/ivy_final_portrait_1-derivatives/ivy_final_portrait_1-480_x_720.jpg,
+                                  images/photography_works/ivy_final_portrait_1-derivatives/ivy_final_portrait_1-960_x_1440.jpg 2x,
+                                  images/photography_works/ivy_final_portrait_1-derivatives/ivy_final_portrait_1-1140_x_1710.jpg 3x"
+                          media="(min-width: 480px)">
+
+
+                  <!-- Fallback image -->
+                  <img src="images/photography_works/ivy_final_portrait_1-derivatives/ivy_final_portrait_1-480_x_720.jpg" 
+                        alt="Thumbnail image of final photography portrait of Ivy" 
+                        role="img" 
+                        itemprop="thumbnailUrl">
+                </picture>
+
               </div>
             </div>
           </div>
