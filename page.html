@@ -73,6 +73,7 @@
                   <img src="images/jess_huynh_portfolio_logo.png" width="60" height="60" 
                   alt="Logo image of Jess Huynh's portfolio brand" class="align-middle" role="img" itemprop="logo">
               </a>
+              <!-- Menu items created with list and link elements -->
               <li class="nav-item" role="listitem menubar" itemprop="name">
                   <a class="nav-link text-secondary" href="#about" role="link" aria-haspopup="true" itemprop="url">About</a>
               </li>
@@ -819,38 +820,41 @@
               </div>
               <div class="contact-form" itemprop="hasMap" itemscope itemtype="https://schema.org/Map">
                 <form role="form" itemprop="potentialAction" itemscope itemtype="https://schema.org/CommunicateAction">
-
+                  <!-- Name input -->
                   <div class="form-group" itemprop="sender">
                     <label for="name" itemprop="name">Name</label>
                     <input type="text" class="form-control" id="name" aria-describedby="enter-name" placeholder="Enter Name" itemprop="agent">
                   </div>
-                
+                  <!-- Email input -->
                   <div class="form-group" itemprop="sender">
                     <label for="email" itemprop="email">Email address</label>
                     <input type="email" class="form-control" id="email" aria-describedby="enter-email" placeholder="Enter email" itemprop="recipient">
                   </div>
-                
+                  <!-- Subject input -->
                   <div class="form-group" itemprop="about">
                     <label for="subject" itemprop="subjectOf">Subject</label>
                     <input type="text" class="form-control" id="subject" aria-describedby="enter-subject" placeholder="Enter Subject">
                   </div>
+                  <!-- Customized message input -->
                   <div class="form-group" itemprop="object">
                     <label for="message" itemprop="text">Your Message</label>
                     <textarea class="form-control" id="message" rows="8" aria-describedby="enter-msg"></textarea>
                   </div>
-                
+                  <!-- Submit button -->
                   <div class="contact-button">
                     <button type="submit" role="button" itemprop="handler">Send!</button>
                   </div>
                 
                 </form>
             </div>
+            <!-- Imbedded map with iframe element -->
             <div class="map">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d44864.148537239686!2d-75.82287234487819!3d45.348624864991244!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1680648965404!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </div>
     </main>
 </body>
+<!-- Footer with copyright information -->
 <footer role="contentinfo">
     <p>Jess Huynh &#169 2023</p>
 </footer>
